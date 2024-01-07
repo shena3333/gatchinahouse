@@ -4,7 +4,7 @@ body {
 }
 
 .footer {
-    background-color: #09d3f7;
+    background-color: #47A76A;
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
@@ -16,7 +16,7 @@ body {
 }
 
 .element-menu:hover {
-    background-color: #a6b0f7;
+    background-color: #2ea75a;
     border-radius: 15px;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .footer {
-    background-color: #09d3f7;
+    background-color: #47A76A;
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
@@ -39,7 +39,7 @@ body {
 }
 
 .menu {
-    background-color: #9966cc;
+    background-color: #47A76A;
     display: flex;
     justify-content: space-around;
     height: 40px;
@@ -64,7 +64,7 @@ body {
 }
 
 .phone {
-    background-color: #9966cc;
+    background-color: #47A76A;
     border-radius: 30px;
     height: 35px;
     width: 210px;
