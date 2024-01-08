@@ -31,7 +31,7 @@
                 <a class='element-menu' href="#contact">Контакты</a>
             </div>
         </nav>
-     
+
     </header>
 
     <main class="main">
@@ -76,25 +76,28 @@
             <div class="container">
                 <h3>Отзывы</h3>
             </div>
-            <div class="container">
+          
+            <div class="container review-max">
                 <img src="./img/review1.jpg" class="review-client" alt="review">
                 <img src="./img/review2.jpg" class="review-client" alt="review">
                 <img src="./img/review3.jpg" class="review-client" alt="review">
                 <img src="./img/review4.jpg" class="review-client" alt="review">
             </div>
             <div class="container">
-            <div id="carousel" class="carousel">
-                <button class="arrow prev">⇦</button>
-                <div class="gallery">
-                  <ul>
-                    <li><img src="./img/review1.jpg"></li>
-                    <li><img src="./img/review2.jpg"></li>
-                    <li><img src="./img/review3.jpg"></li>
-                    <li><img src="./img/review4.jpg"></li>
-                  </ul>
+
+                <div id="carousel" class="carousel review-min">
+                    <!-- <button class="arrow prev">⇦</button> -->
+                    <button class="arrow prev"><<</button>
+                    <div class="gallery">
+                        <ul>
+                            <li><img src="./img/review1.jpg"></li>
+                            <li><img src="./img/review2.jpg"></li>
+                            <li><img src="./img/review3.jpg"></li>
+                            <li><img src="./img/review4.jpg"></li>
+                        </ul>
+                    </div>
+                    <button class="arrow next">⇨</button>
                 </div>
-                <button class="arrow next">⇨</button>
-              </div>
             </div>
         </section>
         <section class="contact" id='contact'>
@@ -132,42 +135,42 @@
         </div>
     </footer>
 
-<script>
-    /* этот код помечает картинки, для удобства разработки */
-    let i = 1;
-    for(let li of carousel.querySelectorAll('li')) {
-      li.style.position = 'relative';
-      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
-      i++;
-    }
+    <script>
+        /* этот код помечает картинки, для удобства разработки */
+        let i = 1;
+        for (let li of carousel.querySelectorAll('li')) {
+            li.style.position = 'relative';
+            li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+            i++;
+        }
 
-    /* конфигурация */
-    let width = 250; // ширина картинки
-    let count = 1; // видимое количество изображений
+        /* конфигурация */
+        let width = 250; // ширина картинки
+        let count = 1; // видимое количество изображений
 
-    let list = carousel.querySelector('ul');
-    let listElems = carousel.querySelectorAll('li');
+        let list = carousel.querySelector('ul');
+        let listElems = carousel.querySelectorAll('li');
 
-    let position = 0; // положение ленты прокрутки
+        let position = 0; // положение ленты прокрутки
 
-    carousel.querySelector('.prev').onclick = function() {
-      // сдвиг влево
-      position += width * count;
-      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-      position = Math.min(position, 0)
-      list.style.marginLeft = position + 'px';
-    };
+        carousel.querySelector('.prev').onclick = function () {
+            // сдвиг влево
+            position += width * count;
+            // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+            position = Math.min(position, 0)
+            list.style.marginLeft = position + 'px';
+        };
 
-    carousel.querySelector('.next').onclick = function() {
-      // сдвиг вправо
-      position -= width * count;
-      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-      position = Math.max(position, -width * (listElems.length - count));
-      list.style.marginLeft = position + 'px';
-    };
-      
+        carousel.querySelector('.next').onclick = function () {
+            // сдвиг вправо
+            position -= width * count;
+            // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+            position = Math.max(position, -width * (listElems.length - count));
+            list.style.marginLeft = position + 'px';
+        };
 
-</script>
+
+    </script>
 </body>
 
 </html>
