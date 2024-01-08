@@ -76,13 +76,13 @@
             <div class="container">
                 <h3>Отзывы</h3>
             </div>
-            <div class="container foto-box">
-                <img src="./img/review1.jpg" class="review-client foto" alt="review">
-                <img src="./img/review2.jpg" class="review-client foto" alt="review">
-                <img src="./img/review3.jpg" class="review-client foto" alt="review">
-                <img src="./img/review4.jpg" class="review-client foto" alt="review">
+            <div class="container">
+                <img src="./img/review1.jpg" class="review-client" alt="review">
+                <img src="./img/review2.jpg" class="review-client" alt="review">
+                <img src="./img/review3.jpg" class="review-client" alt="review">
+                <img src="./img/review4.jpg" class="review-client" alt="review">
             </div>
-            <div class="container"><img class='main-foto' src="./img/review1.jpg" alt="main-image"></div>
+          
         </section>
         <section class="contact" id='contact'>
             <div class="contact-element">
@@ -120,12 +120,7 @@
     </footer>
 
 <script>
-        const mainFoto = document.querySelector('.main-foto');
-    document.addEventListener("mouseover", function (e) {
-        if (e.target.closest('.foto')) {
-            mainFoto.src = e.target.src;
-        }
-    });
+
 </script>
 </body>
 
