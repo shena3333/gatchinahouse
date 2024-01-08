@@ -141,6 +141,25 @@ body {
     .text {
         font-size: 18px;
     }
+    .foto-box {
+        display: flex;
+    } 
+    .main-foto{
+        display: inline;
+        width: 250px;
+        height: auto;
+    } 
+    .foto {
+        transition: 1s;
+        /* Время эффекта */
+        width: 80px;
+        height: 80px;
+        margin-right: 5px;
+    }
+    .foto:hover {
+        transform: scale(1.1);
+        /* Увеличиваем масштаб */
+    }
 }
 @media screen and (max-width: 1000px) {
 .foto-box {
