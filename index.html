@@ -31,28 +31,26 @@
                 <a class='element-menu' href="#contact">Контакты</a>
             </div>
         </nav>
-        <div class="title-container">
-            <div class="container">
-                <h1 class="title">Gatchina House</h1>
-            </div>
-            <div class="container">
-                <h2 class="subtitle">Строительство каркасных домов в Санкт-Петербурге и Ленинградской области</h2>
-            </div>
-        </div>
+     
     </header>
 
     <main class="main">
         <section class="about-us" id='about-us'>
-            <!-- <div class="container">
-                <h3>О нас</h3>
-            </div> -->
+            <div class="title-container">
+                <div class="container">
+                    <h1 class="title">Gatchina House</h1>
+                </div>
+                <div class="container">
+                    <h2 class="subtitle">Строительство каркасных домов в Санкт-Петербурге и Ленинградской области</h2>
+                </div>
+            </div>
             <div class="container">
                 <p class="text">Построим Вам дом для счастья! Одноэтажный или двухэтажный, с верандой или без. Зимой или
-                    летом - мы
-                    строим для Вас!</p>
+                    летом - мы строим для Вас!</p>
             </div>
 
-            <div class="container"> <span class="text">Производим работы - cтроительство каркасных домов под ключ.</span></div>
+            <div class="container"> <span class="text">Производим работы - cтроительство каркасных домов под
+                    ключ.</span></div>
             <div class="container container-wrap list-work-container">
                 <div class="list-work">возведение каркаса</div>
                 <div class="list-work">стропильная система</div>
@@ -73,15 +71,19 @@
             <div class="container">
                 <h3>Фотогалерея наших домов</h3>
             </div>
-
         </section>
         <section class="review" id='review'>
             <div class="container">
                 <h3>Отзывы</h3>
             </div>
-
+            <div class="container foto-box">
+                <img src="./img/review1.jpg" class="review-client foto" alt="review">
+                <img src="./img/review2.jpg" class="review-client foto" alt="review">
+                <img src="./img/review3.jpg" class="review-client foto" alt="review">
+                <img src="./img/review4.jpg" class="review-client foto" alt="review">
+            </div>
+            <div class="container"><img class='main-foto' src="./img/review1.jpg" alt="main-image"></div>
         </section>
-
         <section class="contact" id='contact'>
             <div class="contact-element">
 
@@ -94,7 +96,6 @@
                             <img class='icon-phone' src="./img/phone-green.svg" alt="phone">
                             <span class="number-phone">+7-960-241-31-30</span>
                         </div>
-
                     </a>
                 </div>
             </div>
@@ -118,6 +119,14 @@
         </div>
     </footer>
 
+<script>
+        const mainFoto = document.querySelector('.main-foto');
+    document.addEventListener("mouseover", function (e) {
+        if (e.target.closest('.foto')) {
+            mainFoto.src = e.target.src;
+        }
+    });
+</script>
 </body>
 
 </html>
