@@ -106,8 +106,8 @@ body {
     text-align: justify;
     padding: 15px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .menu {  
-        font-size: 17px;
+        font-size: 15px;
     }
 }
