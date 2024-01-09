@@ -277,3 +277,12 @@ body {
     box-shadow: 10px 10px 30px #5ad888;;
     transform: scale(1.2);
 }
+.tittle-photo{
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.container-color{
+    background-color: #5ad888;
+    height: 55px;
+}
