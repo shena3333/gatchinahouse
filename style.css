@@ -8,6 +8,7 @@ body {
     background-image: url(./img/fon3.jpg);
     width: 100%;
     height: 100vh;
+    /* height: auto; */
     background-size: cover;
     margin-bottom: 50px;
 }
@@ -77,7 +78,7 @@ body {
 }
 
 .list-work {
-    background-color: rgb(90, 216, 136,0.7);
+    background-color: rgb(90, 216, 136, 0.7);
     border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
@@ -105,12 +106,12 @@ body {
     margin-block-start: 0;
     margin-block-end: 0;
     border-radius: 10px;
-    /* background: rgb(255, 255, 255,0.5); */
 }
 
-.our-house{
+.our-house {
     margin-top: 50px;
 }
+
 .text {
     font-size: 20px;
     font-weight: 700;
@@ -125,7 +126,8 @@ body {
     height: auto;
     margin-left: 5px;
 }
-.review-min{
+
+.review-min {
     display: none;
 }
 
@@ -133,13 +135,14 @@ body {
     .menu {
         font-size: 15px;
     }
-    .list-work{
+
+    .list-work {
         padding: 0px;
     }
+
     .list-work-container {
         /* background-color: rgb(90, 216, 136); */
-        /* border: 2px solid #5ad888; */
-        border-radius: 10px;
+        /* border-radius: 10px; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -160,15 +163,17 @@ body {
         margin-left: 5px;
         margin-right: 5px;
     } */
-    .review-min{
+    .review-min {
         display: inline;
     }
-    .review-max{
+
+    .review-max {
         display: none;
     }
 }
 
 @media screen and (max-width: 1020px) {
+
     /* .review-client {
         width: 70px;
         height: auto;
@@ -179,10 +184,11 @@ body {
         transform: scale(2.9);
        
     } */
-    .review-min{
+    .review-min {
         display: inline;
     }
-    .review-max{
+
+    .review-max {
         display: none;
     }
 }
@@ -195,16 +201,16 @@ body {
     border-radius: 15px;
     background: #eee;
     background: #5ad888;
-  }
-  
-  .carousel img {
+}
+
+.carousel img {
     width: 250px;
     height: 550px;
     /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
     display: block;
-  }
-  
-  .arrow {
+}
+
+.arrow {
     position: absolute;
     top: 60px;
     padding: 2px;
@@ -212,38 +218,38 @@ body {
     background: white;
     border-radius: 10px;
     border: 1px solid gray;
-    
+
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     /* color: #444; */
-    color:#5ad888;
+    color: #5ad888;
     display: block;
-  }
-  
-  .arrow:focus {
+}
+
+.arrow:focus {
     outline: none;
-  }
-  
-  .arrow:hover {
+}
+
+.arrow:hover {
     background: #ccc;
     cursor: pointer;
-  }
-  
-  .prev {
+}
+
+.prev {
     left: 7px;
-  }
-  
-  .next {
+}
+
+.next {
     right: 7px;
-  }
-  
-  .gallery {
+}
+
+.gallery {
     width: 252px;
     overflow: hidden;
-  }
-  
-  .gallery ul {
+}
+
+.gallery ul {
     height: 550px;
     width: 9999px;
     margin: 0;
@@ -251,10 +257,10 @@ body {
     list-style: none;
     transition: margin-left 250ms;
     /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
-  
+
     font-size: 0;
-  }
-  
-  .gallery li {
+}
+
+.gallery li {
     display: inline-block;
-  }
+}
