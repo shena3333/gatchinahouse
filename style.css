@@ -290,7 +290,7 @@ body {
 }
 
 .button-house {
-    background: none;
+    background: white;
     border: 1px solid black;
     border-radius: 4px;
     padding: 5px;
@@ -311,7 +311,7 @@ button:active {
 
 .slider {
     width: 270px;
-    height: 270px;
+    height: 291px;
     margin: 20px auto;
     overflow: hidden;
 }
@@ -331,4 +331,14 @@ button:active {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
+}
+.margin-slider{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.house-name{
+    font-size: 15px;
+    font-weight: 800;
 }
